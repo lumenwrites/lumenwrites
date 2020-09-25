@@ -109,6 +109,7 @@ header {
   text-align: center;
   padding: 40px 0;
   background: white url(/static/img/code-lines.png) no-repeat center;
+  background-size: cover;
   color: white;
 }
 header .avatar {
@@ -121,6 +122,7 @@ header .avatar {
   color: #f66303;
   background: #1e2329;
   background: white url(/static/img/bg-no-frame.png) no-repeat center;
+  background-size: cover;
   padding: 40px 0;
 }
 .skills .wrapper {
@@ -248,6 +250,7 @@ header .avatar {
 
 .about-bg {
   background: white url(/static/img/macbook.png) no-repeat center;
+  background-size: cover;
 }
 
 .about {
