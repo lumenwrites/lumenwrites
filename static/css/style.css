@@ -197,6 +197,7 @@ header .avatar {
   background: white;
   border: 1px solid rgba(98, 24, 24, 0.2);
   box-shadow: 0 1px 4px rgba(98, 24, 24, 0.2);
+  position: relative;
 }
 @media (max-width: 640px) {
   .project {
@@ -210,9 +211,24 @@ header .avatar {
 }
 .project .description {
   padding: 15px;
+  padding-bottom: calc(22px + 15px);
 }
 .project .description p:first-of-type {
   margin-top: 0;
+}
+.project .footer {
+  padding: 4px 15px 6px 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #fcfcfc;
+  border-top: 1px solid #e8e8e8;
+}
+.project .footer .tag {
+  background-color: #e7e7e7;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding: 1px 4px;
 }
 
 .about-bg {
