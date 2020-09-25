@@ -156,6 +156,11 @@ header .avatar {
     flex-basis: calc(100% / 2);
   }
 }
+@media (max-width: 640px) {
+  .skills .wrapper .skill {
+    flex-basis: calc(100%);
+  }
+}
 .skills .wrapper .skill i {
   font-size: 64px;
   color: white;
@@ -171,6 +176,7 @@ header .avatar {
 
 .projects {
   background: #faf4e9;
+  padding-top: 20px;
 }
 .projects h2 {
   color: #f66303;
@@ -179,7 +185,7 @@ header .avatar {
 .projects .wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .project {
@@ -188,82 +194,25 @@ header .avatar {
   margin: 5px;
   box-sizing: border-box;
   font-size: 16px;
-  position: relative;
-  /* Display overlay on hover */
-  /* Scale up on hover */
+  background: white;
+  border: 1px solid rgba(98, 24, 24, 0.2);
+  box-shadow: 0 1px 4px rgba(98, 24, 24, 0.2);
 }
 @media (max-width: 640px) {
   .project {
     flex-basis: calc(100%);
   }
 }
-.project .btn-outline {
-  border: 1px solid white;
-  padding: 20px 40px;
+.project h2 {
+  color: #3d454b;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-.project .thumbnail {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-position: 50% 50%;
-  background-size: cover;
-  margin: 0;
-  border: none;
-  background-color: white;
+.project .description {
+  padding: 15px;
 }
-.project .overlay {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 200ms, visibility 200ms;
-  cursor: default;
-  background: rgba(0, 0, 0, 0.8);
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  padding: 20px;
-}
-.project .overlay h2,
-.project .overlay p,
-.project .overlay a {
-  color: white;
-}
-.project .overlay .btn-outline {
-  position: absolute;
-  bottom: 20px;
-  left: calc(50% - 90px);
-  width: 180px;
-}
-.project:hover .overlay {
-  visibility: visible;
-  opacity: 1;
-}
-.project:hover {
-  transform: scale(1.05);
-  transition: all 200ms;
-}
-
-.project::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.project .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  /* added for centered text */
-  justify-content: center;
-  /* added for centered text */
-  align-items: center;
-  /* added for centered text */
+.project .description p:first-of-type {
+  margin-top: 0;
 }
 
 .about-bg {
@@ -283,6 +232,30 @@ header .avatar {
   width: 64px;
   margin: auto;
   margin-top: 20px;
+}
+
+/* Css magic that keeps images 16x9, background in the center. */
+.image-wrapper {
+  width: 100%;
+  position: relative;
+}
+.image-wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: "";
+}
+.image-wrapper .thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  margin: 0;
+  border: none;
+  background-color: #1f364d !important;
 }
 
 /*# sourceMappingURL=style.css.map */
