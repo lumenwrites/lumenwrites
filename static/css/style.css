@@ -71,6 +71,23 @@ fieldset {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: bold;
+  font-display: swap;
+}
 body,
 html {
   font-family: "Open Sans";
@@ -108,7 +125,7 @@ b {
 header {
   text-align: center;
   padding: 40px 0;
-  background: white url(/static/img/code-lines.png) no-repeat center;
+  background: white url(/static/img/code-lines.webp) no-repeat center;
   background-size: cover;
   color: white;
 }
@@ -121,7 +138,7 @@ header .avatar {
 .skills {
   color: #f66303;
   background: #1e2329;
-  background: white url(/static/img/bg-no-frame.png) no-repeat center;
+  background: white url(/static/img/bg-no-frame.webp) no-repeat center;
   background-size: cover;
   padding: 40px 0;
 }
@@ -132,6 +149,12 @@ header .avatar {
 .skills .wrapper .skill {
   text-align: center;
   flex-basis: calc(100% / 4);
+  margin-top: 20px;
+}
+@media (max-width: 720px) {
+  .skills .wrapper .skill {
+    flex-basis: calc(100% / 2);
+  }
 }
 @media (max-width: 640px) {
   .skills .wrapper .skill {
@@ -249,7 +272,7 @@ header .avatar {
 }
 
 .about-bg {
-  background: white url(/static/img/macbook.png) no-repeat center;
+  background: white url(/static/img/macbook.webp) no-repeat center;
   background-size: cover;
 }
 
