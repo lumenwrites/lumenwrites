@@ -151,12 +151,12 @@ header .avatar {
   flex-basis: calc(100% / 4);
   margin-top: 20px;
 }
-@media (max-width: 720px) {
+@media (max-width: 620pt) {
   .skills .wrapper .skill {
     flex-basis: calc(100% / 2);
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 500pt) {
   .skills .wrapper .skill {
     flex-basis: calc(100%);
   }
