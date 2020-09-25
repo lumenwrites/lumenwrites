@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input {
+  font-size: 1em;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  margin-top: 1em;
+}
+
+b {
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+  background: white url(/static/img/code-lines.png) no-repeat center;
+  color: white;
+}
+header .avatar {
+  margin: auto;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.skills {
+  color: #f66303;
+  background: #1e2329;
+  background: white url(/static/img/bg-no-frame.png) no-repeat center;
+  padding: 40px 0;
+}
+.skills .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .wrapper .skill {
+  text-align: center;
+  flex-basis: calc(100% / 4);
+}
+@media (max-width: 640px) {
+  .skills .wrapper .skill {
+    flex-basis: calc(100%);
+  }
+}
+.skills .wrapper .skill i {
+  font-size: 64px;
+  color: white;
+  background: #f66303;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.projects {
+  background: #faf4e9;
+}
+.projects h2 {
+  color: #f66303;
+}
+
+.projects .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.project {
+  position: relative;
+  flex-basis: calc(33.333% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+  /* Display overlay on hover */
+  /* Scale up on hover */
+}
+@media (max-width: 640px) {
+  .project {
+    flex-basis: calc(100%);
+  }
+}
+.project .btn-outline {
+  border: 1px solid white;
+  padding: 20px 40px;
+}
+.project .thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin: 0;
+  border: none;
+  background-color: white;
+}
+.project .overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms, visibility 200ms;
+  cursor: default;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+}
+.project .overlay h2,
+.project .overlay p,
+.project .overlay a {
+  color: white;
+}
+.project .overlay .btn-outline {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 90px);
+  width: 180px;
+}
+.project:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.project:hover {
+  transform: scale(1.05);
+  transition: all 200ms;
+}
+
+.project::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.project .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* added for centered text */
+  justify-content: center;
+  /* added for centered text */
+  align-items: center;
+  /* added for centered text */
+}
+
+.about-bg {
+  background: white url(/static/img/macbook.png) no-repeat center;
+}
+
+.about {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 40px;
+}
+.about a {
+  color: white;
+  font-size: 64px;
+  display: block;
+  width: 64px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
