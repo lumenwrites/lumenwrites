@@ -134,6 +134,11 @@ header {
     .tags {
       overflow: hidden;
       white-space: nowrap;
+      // float: left;
+    }
+    .fab, .fas {
+      float: right;
+      margin: 4px;
     }
     .tag {
       background-color: #e7e7e7;

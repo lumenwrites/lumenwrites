@@ -233,6 +233,10 @@ header .avatar {
   overflow: hidden;
   white-space: nowrap;
 }
+.project .footer .fab, .project .footer .fas {
+  float: right;
+  margin: 4px;
+}
 .project .footer .tag {
   background-color: #e7e7e7;
   font-weight: 100;
