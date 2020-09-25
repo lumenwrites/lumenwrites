@@ -58,7 +58,7 @@ header {
       text-align: center;
       flex-basis: calc(100% / 4);
       margin-top: 20px;
-      @media (max-width: 720px) { //720px
+      @media (max-width: 720px) {
         flex-basis: calc(100% / 2);
       }
       @media (max-width: 640px) {
