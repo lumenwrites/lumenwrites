@@ -150,6 +150,7 @@ header .avatar {
   text-align: center;
   flex-basis: calc(100% / 4);
   margin-top: 20px;
+  font-size: 0.9em;
 }
 @media (max-width: 720px) {
   .skills .wrapper .skill {
