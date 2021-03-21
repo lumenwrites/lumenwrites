@@ -255,6 +255,7 @@ header .avatar {
   background: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 40px;
+  text-align: justify;
 }
 .about a {
   color: white;
@@ -263,6 +264,21 @@ header .avatar {
   width: 64px;
   margin: auto;
   margin-top: 20px;
+}
+.about .cv {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background: white;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  line-height: 64px;
+}
+.about .social-icons {
+  display: flex;
+  max-width: 200px;
+  margin: auto;
 }
 
 /* Css magic that keeps images 16x9, background in the center. */
